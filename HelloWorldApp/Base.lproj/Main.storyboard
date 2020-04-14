@@ -26,7 +26,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="helloTextFieldDidEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="L1o-Nd-h6B"/>
+                                    <action selector="nameFieldDidEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="L1o-Nd-h6B"/>
                                 </connections>
                             </textField>
                         </subviews>
