@@ -17,9 +17,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func nameFieldDidEdit(_ helloTextField: UITextField) {
-        let nameText = (helloTextField.text?.isEmpty ?? true) ? "Everyone" : helloTextField.text!
-        helloLabel.text = "Hello \(nameText)"
+    @IBAction func nameFieldDidEdit(_ nameTextField: UITextField) {
+        let defaultName = "Everyone"
+        let name = (nameTextField.text?.isEmpty ?? true) ? defaultName : nameTextField.text!
+        helloLabel.text = "Hello \(name)"
     }
    
 }
