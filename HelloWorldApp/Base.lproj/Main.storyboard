@@ -26,7 +26,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="nameFieldDidEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="L1o-Nd-h6B"/>
+                                    <action selector="nameFieldDidEdit" destination="BYZ-38-t0r" eventType="editingChanged" id="7iQ-e4-BRW"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -43,6 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="helloLabel" destination="lOa-Pd-hIW" id="cUB-e0-36K"/>
+                        <outlet property="nameTextField" destination="7XY-hl-FDN" id="sUc-y0-i5X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

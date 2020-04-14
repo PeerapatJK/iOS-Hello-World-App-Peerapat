@@ -9,19 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var helloLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func nameFieldDidEdit(_ nameTextField: UITextField) {
-        let defaultName = "Everyone"
-        let name = (nameTextField.text?.isEmpty ?? true) ? defaultName : nameTextField.text!
-        helloLabel.text = "Hello \(name)"
+    
+    var nameText: String {
+       if let nameText = nameTextField.text, !nameText.isEmpty {
+            return nameText
+       }
+       else {
+            let defaultName = "Everyone"
+            return defaultName
+       }
     }
-   
+
+    @IBAction func nameFieldDidEdit() {
+        helloLabel.text = "Hello \(nameText)"
+    }
 }
 
