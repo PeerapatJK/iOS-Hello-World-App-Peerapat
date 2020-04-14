@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var helloLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func helloTextFieldDidEdit(_ helloTextField: UITextField) {
+        let helloText = helloTextField.text ?? "Everyone"
+        helloLabel.text = "Hello \(helloText)"
+    }
+   
 }
 
