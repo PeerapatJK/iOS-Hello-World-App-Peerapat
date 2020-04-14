@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func helloTextFieldDidEdit(_ helloTextField: UITextField) {
-        let helloText = helloTextField.text ?? "Everyone"
+        let helloText = helloTextField.text!.isEmpty ? "Everyone" : helloTextField.text!
         helloLabel.text = "Hello \(helloText)"
     }
    
